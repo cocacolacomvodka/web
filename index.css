@@ -73,6 +73,7 @@ body{
 #projetos{
     display: flex;
     flex-wrap: wrap;
+    padding: 0 auto;
     justify-content: space-between;
     padding: 1vh 5em;
 }
