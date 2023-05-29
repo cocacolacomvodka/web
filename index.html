@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">,
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1{
+            font-size: 10vw;
+        }
+        p{
+            font-size: 3vw;
+        }
+
+        @-webkit-keyframes gradientanim {
+            0%{background-position:0% 49%}
+            50%{background-position:100% 52%}
+            100%{background-position:0% 49%}
+        }
+        @-moz-keyframes gradientanim {
+            0%{background-position:0% 49%}
+            50%{background-position:100% 52%}
+            100%{background-position:0% 49%}
+        }
+        @keyframes gradientanim {
+            0%{background-position:0% 49%}
+            50%{background-position:100% 52%}
+            100%{background-position:0% 49%}
+        }
+
+        body{
+            background: linear-gradient(90deg,#c500c8, #3030ff);
+            background-size: 200% 200%;
+            -webkit-animation: gradientanim 10s ease infinite;
+            -moz-animation: gradientanim 10s ease infinite;
+            animation: gradientanim 10s ease infinite;
+        }
+
+
+        .botaocard button{
+            height: 3em;
+            border-radius: 1em;
+            background: linear-gradient(#c8003ccc, #3030ffcc);
+            padding: 1em;
+            color: #fff;
+            border-style: none;
+            cursor: pointer;
+            background-size: 200% 200%;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+
+        .botaocard button:hover{
+            background: linear-gradient(90deg, #c8003c, #3030ff);
+            background-size: 200% 200%;
+            -webkit-animation: gradientanim 3s ease infinite;
+            -moz-animation: gradientanim 3s ease infinite;
+            animation: gradientanim 3s ease infinite;
+        }
+
+        #title{
+            text-align: center;
+            background-color: #ffffff44;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            width: fit-content;
+            height: fit-content;
+            margin: 0.5em auto;
+            border-radius: 1em;
+            padding: 0.5em;
+
+        }
+
+        #projetos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1vh 5em;
+        }
+
+        .card{
+             background-color: #ffffff99;
+             backdrop-filter: blur(2px);
+             -webkit-backdrop-filter: blur(2px);
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             border-radius: 1em;
+             box-shadow: 0 1em 2em #808080;
+             padding: 1em;
+             margin: 2em;
+             width: 15em;
+        }
+
+        .image{
+            overflow: hidden;
+            box-shadow: 0 1em 2em #808080;
+            border-radius: 3%;
+            height: 12.5em;
+            width: 12.5em;
+        }
+
+        .image img{
+            object-fit: cover;
+            height: 12.5em;
+            width: 12.5em;
+        }
+
+        .nome{
+            margin-top: 1em;
+        }
+
+        .Descricao{
+            text-align: center;
+            width: auto;
+            padding: 0.5em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            border-radius: 3%;
+            background-color: #e0e0e0;
+        }
+
+        .circle{
+            display: flex;
+            width: 10em;
+            height: 10em;
+            border-radius: 100%;
+            background-color: #c8003c;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #botaoadd{
+            border-radius: 100%;
+            background-color: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #add{
+            display: flex;
+            justify-content: center;
+        }
+
+        .search{
+            display: flex;
+            justify-content: center;
+        }
+
+        #search-input{
+            border-radius: 1em;
+            background: linear-gradient(#c8003ccc, #3030ffcc);
+            padding: 1em;
+            color: #fff;
+            border-style: none;
+            cursor: text;
+            background-size: 200% 200%;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+
+        #search-input::placeholder{
+            color: #e0e0e0;
+        }
+
+    </style>
+    <div id="container">
+        <div id="title">
+            <h1>Projects</h1>
+            <p>@cocacolacomvodka</p>
+        </div>
+        <div class="search">
+            <input type="text" class="search-text" id="search-input" placeholder="Search projects">
+        </div>
+        <div id="projetos">
+            <div class="card">
+                <div class="image">
+                    <img src="imgs/trabalho1.png">
+                </div>
+                <div class="nome">Responsive div</div>
+                <div class="Descricao">Responsive div project Web Desing</div>
+                <div class="botaocard">
+                    <a href="/webdesing/exercicio1/ex1.html">
+                        <button class="button">Acessar Projeto</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="imgs/siteprincipal.png">
+                </div>
+                <div class="nome">Site Principal</div>
+                <div class="Descricao">Site Principal Minha Camiseta Web Desing</div>
+                <div class="botaocard">
+                    <a href="http://localhost:8081/">
+                        <button class="button">Acessar Projeto</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="imgs/Captura de tela 2023-05-17 105427.png">
+                </div>
+                <div class="nome">Listas com html</div>
+                <div class="Descricao">exercícios de listas no HTML</div>
+                <div class="botaocard">
+                    <a href="progweb/listas/lista.html">
+                        <button class="button">Acessar Projeto</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="imgs/Captura de tela 2023-05-28 181449.png">
+                </div>
+                <div class="nome">Mais divs responsivas</div>
+                <div class="Descricao">exercício 2 de webdesing</div>
+                <div class="botaocard">
+                    <a href="webdesing/exercicio2/ex2.html">
+                        <button class="button">Acessar Projeto</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="add">
+            <div class="card">
+                <div class="nome">
+                    Adicionar Projeto
+                </div>
+                <button id="botaoadd">
+                    <div class="circle">
+                        <h1>+</h1>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+        $('#search-input').on('input', function() {
+            var searchText = $(this).val().toLowerCase();
+            $('.card').hide();
+            $('.card').filter(function() {
+            return $(this).text().toLowerCase().includes(searchText);
+            }).show();
+        });
+        });
+    </script>   
+</body>
+</html>

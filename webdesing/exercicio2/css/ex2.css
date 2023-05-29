@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    height: 3em;
+    border-radius: 1em;
+    background: linear-gradient(#c8003ccc, #3030ffcc);
+    padding: 1em;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    background-size: 200% 200%;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+#pesquisar{
+    border-radius: 1em;
+    background: linear-gradient(#c8003ccc, #3030ffcc);
+    padding: 1em;
+    color: #fff;
+    border-style: none;
+    cursor: text;
+    background-size: 200% 200%;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+#header{
+    display: flex;
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#promocoes{
+    display: flex;
+    flex-direction: row;
+    height: 30em;
+    justify-content: space-around;
+}
+
+#promo1{
+    background-color: #ffffff99;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 1em 2em #808080;
+    padding: 1em;
+    margin: 2em;
+    width: 40%;
+}
+
+#promo2{
+    background-color: #ffffff99;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 1em 2em #808080;
+    padding: 1em;
+    margin: 2em;
+    width: 40%;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerdiv{
+    display: flex;
+    width: 25vw;
+    background-color: blueviolet;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.li{
+    margin-left: 0.8em;
+}

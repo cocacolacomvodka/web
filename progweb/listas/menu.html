@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu em html com lista</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        @-webkit-keyframes gradientanim {
+            0%{background: linear-gradient(90deg, #c8003c, #3030ff)}
+            50%{background: linear-gradient(0deg, #c8003c, #3030ff)}
+            100%{background: linear-gradient(-90deg, #c8003c, #3030ff)}
+        }
+        @-moz-keyframes gradientanim {
+            0%{background: linear-gradient(90deg, #c8003c, #3030ff)}
+            50%{background: linear-gradient(0deg, #c8003c, #3030ff)}
+            100%{background: linear-gradient(-90deg, #c8003c, #3030ff)}
+        }
+        @keyframes gradientanim {
+            0%{background: linear-gradient(90deg, #c8003c, #3030ff)}
+            50%{background: linear-gradient(0deg, #c8003c, #3030ff)}
+            100%{background: linear-gradient(-90deg, #c8003c, #3030ff)}
+        }
+
+        #menu{
+            padding: 1em;
+            margin: 0 auto;
+            width: fit-content;
+        }
+
+        li{
+            display: inline;
+            height: 3em;
+            border-radius: 1em;
+            background: linear-gradient(90deg, #c8003c, #3030ff);
+            padding: 1em;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        li:hover{
+            -webkit-animation: gradientanim 2s alternate infinite;
+            -moz-animation: gradientanim 2s alternate infinite;
+            animation: gradientanim 2s alternate infinite;
+        }
+    </style>
+    <div id="menu">
+        <ul>
+            <li>home</li>
+            <li>tenis</li>
+            <li>vestuário</li>
+            <li>acessórios</li>
+            <li>contato</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+</head>
+<body>
+    <style>
+        ol{
+            list-style-type: upper-roman;
+            font-size: 20pt;
+        }
+
+        #li1{
+            list-style-type: numeric;
+            font-size: 15pt;
+
+        }
+
+        #li2{
+            list-style-type: lower-alpha;
+            font-size: 10pt;
+        }
+
+        button{
+            height: 3em;
+            border-radius: 1em;
+            background: linear-gradient(#c8003c, #3030ff) ;
+            padding: 1em;
+            color: #fff;
+            border-style: none;
+            cursor: pointer;
+        }
+
+    </style>
+    
+
+    <div id="listadl">
+        <dl>
+            <dt>lista com determinante</dt>
+            <dd>item 1</dd>
+            <dd>item 2</dd>
+            <dd>item 3</dd>
+        </dl>
+    </div>
+    <div id="listaol">    
+    <ol>
+        <li>Lista ordenada</li>    
+        <ol>
+            <li id="li1"> item </li>
+            <li id="li1"> item </li>
+              <ol>
+                  <li id="li2">subitem</li>
+                  <li id="li2">subitem</li>
+              </ol>
+            <li id="li1">item</li>
+        </ol>
+    </ol>
+    </div>
+    <div id="listaul">
+        <ul>
+            <li>lista não ordenada</li>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <ul>
+                    <li>subitem</li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+    <div id="botao">
+        <a href="menu.html">
+            <button>next</button>
+        </a>
+    </div>
+</body>
+</html>

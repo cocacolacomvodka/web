@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="imgs/logo.svg" type="image/x-icon">
+    <title>Minha Camiseta</title>
+</head>
+<body>
+    <div id="header">    
+        <div id="title">
+            <a href="landingpage.html">
+                Minha<br>Camiseta
+            </a>
+        </div>
+        <div id="pesquisa">
+            <input type="text" class="search-text" id="search-input" placeholder="Pesquisar Camiseta">
+        </div>
+        <div id="buttons">
+            <button id="new">
+                NEW
+            </button>
+            <button id="Catalogo">
+                Produtos
+            </button>
+            <button id="login">
+                Login
+            </button>
+        </div>
+    </div>
+
+    <div id="produtos">
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta1.png" alt="camiseta">
+            </div>
+            <div class="nome">Matanza</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta2.png" alt="camiseta">
+            </div>
+            <div class="nome">Megadeath</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta3.png" alt="camiseta">
+            </div>
+            <div class="nome">Slipknot</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta4.png" alt="camiseta">
+            </div>
+            <div class="nome">Guns n'Roses</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta1.png" alt="camiseta">
+            </div>
+            <div class="nome">Matanza</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta2.png" alt="camiseta">
+            </div>
+            <div class="nome">Megadeath</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta3.png" alt="camiseta">
+            </div>
+            <div class="nome">Slipknot</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta4.png" alt="camiseta">
+            </div>
+            <div class="nome">Guns n'Roses</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta1.png" alt="camiseta">
+            </div>
+            <div class="nome">Matanza</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta2.png" alt="camiseta">
+            </div>
+            <div class="nome">Megadeath</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta3.png" alt="camiseta">
+            </div>
+            <div class="nome">Slipknot</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="imgs/camisetas/camiseta4.png" alt="camiseta">
+            </div>
+            <div class="nome">Guns n'Roses</div>
+            <div class="preco">R$99,99</div>
+            <div class="compra"><button class="buttoncompra">Comprar</button></div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div id="contato">
+            <p>Rua Tanana, 123 - Cento, Santa Cruz do Sul</p>
+            <br>
+            <p>(51) 99999 9999</p>
+            <br>
+            <p>minha@camiseta.com</p>
+        </div>
+        <div id="socials">
+            <table>
+                <tr>
+                  <td><button>Botão 1</button></td>
+                  <td><button>Botão 2</button></td>
+                </tr>
+                <tr>
+                  <td><button>Botão 3</button></td>
+                  <td><button>Botão 4</button></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+        $('#search-input').on('input', function() {
+            var searchText = $(this).val().toLowerCase();
+            $('.card').hide();
+            $('.card').filter(function() {
+            return $(this).text().toLowerCase().includes(searchText);
+            }).show();
+        });
+        });
+    </script>
+</body>
+</html>

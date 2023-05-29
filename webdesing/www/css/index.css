@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: josefin sans;
+    --verde1: #35a500;
+    --verde2: #30b330;
+    --cinza: #d9d9d9;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 2.5em;
+    font-style: bold;
+}
+
+h2{
+    font-size: 1.5625em;
+    font-style: bold;
+}
+
+p{
+    font-size: 1.5625em;
+}
+
+button{
+    border-radius: 1vh;
+    border: 5vh;
+    margin-right: 1vh;
+    background-color: var(--verde2);
+    color: #fff;
+    width: 10vh;
+    height: 5vh;
+}
+
+button:hover{
+    background-color: var(--verde1);
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+#header{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    margin: 0;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    background-color: #000000ee;
+    backdrop-filter: blur(5px);
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+#title{
+    text-align: left;
+    margin-left: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+}
+
+#pesquisa{
+    display: flex;
+    align-content: center;
+    margin: auto 0;
+}
+
+#pesquisa input{
+    border-radius: 1vh;
+    border: 5vh;
+    margin-right: 1vh;
+    background-color: var(--verde2);
+    color: #fff;
+    width: 50vh;
+    height: 5vh;
+    text-indent: 1em;
+}
+
+#pesquisa input:valid{
+    border-radius: 1vh;
+    border: 5vh;
+    margin-right: 1vh;
+    background-color: var(--verde2);
+    color: #fff;
+    width: 50vh;
+    height: 5vh;
+    text-indent: 1em;
+}
+
+#pesquisa input::placeholder{
+    color: #e0e0e0;
+    text-indent: 1em;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-right: 2em;
+    justify-content: space-around;
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#banner{
+    padding-top: 10vh
+}
+
+#fundo{
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    height: 25vw;
+    width: 100vw;
+}
+
+#fundo img{
+    object-fit: fill;
+    height: 25vw;
+    width: 100vw;
+}
+
+#logo{
+    z-index: 0;
+    position: relative;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 10%;
+    background-color: #d9d9d977;
+    backdrop-filter: blur(5px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+#logo img{
+    height: 20vw;
+    width: 20vw;
+    margin: 0 auto;
+}
+
+#produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6%;
+    box-shadow: 0 1em 2em #808080;
+    background-color: var(--cinza);
+    padding: 1em;
+    margin: 2em;
+    justify-content: space-around;
+}
+
+.image img{
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+#about{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+#paragrafo{
+    text-align: right;
+    width: 50vw;
+}
+
+#fotoabout{
+    overflow: auto;
+}
+
+#fotoabout img{
+    object-fit: contain;
+    height: 19em;
+    width: 27em;
+    overflow: hidden;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6em;
+    padding: 3em 1em;
+    background-color: #d9d9d9;
+}
+
+@media only screen and (max-width: 480px) {    
+    #buttons button { 
+       width: fit-content;
+       height: 3vh;
+       padding: 0.5vh;
+    }
+    #fundo{
+       z-index: -1;
+       position: absolute;
+       overflow: auto;
+       width: 100vw;
+   }
+   
+   #fundo img{
+       max-width: 100%;
+       height: auto;
+   }
+
+   #paragrafo{
+       text-align: justify;
+       font-size: 0.5em;
+   }
+
+   #fotoabout{
+       width: 9em;
+       height: 16em;
+       overflow: auto;
+   }
+
+   #fotoabout img{
+       object-fit: cover;
+   }
+
+   #contato{
+    text-align: left;
+    font-size: 0.5em;
+   }
+
+   }
