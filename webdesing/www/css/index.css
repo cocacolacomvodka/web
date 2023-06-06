@@ -39,6 +39,11 @@ button:hover{
     cursor: pointer;
 }
 
+.button:hover{
+    background-color: var(--verde1);
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
     color: #fff;
@@ -213,6 +218,63 @@ a:visited{
     padding: 3em 1em;
     background-color: #d9d9d9;
 }
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 60vh;
+    border-radius: 5%;
+    margin: auto;
+    background-color: #d9d9d977;
+    backdrop-filter: blur(2px);
+}
+
+#loginForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+}
+
+#loginForm form .button{
+    border-radius: 1vh;
+    border: 5vh;
+    margin-right: 1vh;
+    background-color: var(--verde2);
+    color: #fff;
+    width: 20em;
+    height: 3em;
+}
+
+.inputLogin{
+    background-color: #303030dd;
+    border: none;
+    border-radius: 10px;
+    height: 3em;
+    width: 20em;
+    text-align: center;
+    color: #fff;
+}
+
+.inputLogin::placeholder{
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 480px) {    
     #buttons button { 
